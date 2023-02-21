@@ -16,8 +16,8 @@ class User extends Authenticatable
         'socket_id',
     ];
 
-	public function messages(): HasMany
-	{
-		return $this->hasMany(Message::class);
-	}
+    public function messages(): HasMany
+    {
+        return $this->hasMany(Message::class);
+    }
 }

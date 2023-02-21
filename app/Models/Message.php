@@ -15,12 +15,12 @@ class Message extends Model
         'content',
     ];
 
-	protected $casts = [
-		'created_at' => 'datetime:h:i'
-	];
+    protected $casts = [
+        'created_at' => 'datetime:h:i',
+    ];
 
-	public function user(): BelongsTo
-	{
-		return $this->belongsTo(User::class);
-	}
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class);
+    }
 }

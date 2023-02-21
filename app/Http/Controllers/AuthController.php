@@ -26,10 +26,10 @@ class AuthController extends Controller
         return redirect()->route('index');
     }
 
-	public function destroy(): RedirectResponse
-	{
-		Auth::logout();
+    public function destroy(): RedirectResponse
+    {
+        Auth::logout();
 
-		return redirect()->route('auth.create');
-	}
+        return redirect()->route('auth.create');
+    }
 }
